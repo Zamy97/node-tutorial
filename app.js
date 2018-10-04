@@ -16,7 +16,7 @@ function addNumbers(a,b){
 
 console.log(addNumbers(7,5));
 
-// Any function without return 
+// Any function without return will come out as undefined!
 
 function andreaPelayo(){
 
