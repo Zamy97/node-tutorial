@@ -1,5 +1,14 @@
+const http = require('http');
 
+function oneRequest(request, response){
+    console.log("a user made a request" + request.url);
+    response.writeH (200, {"Context-Type": "text/plain"
+    response.write("Here's some data that you requested");
+    response.end();
 
+http.createServer(oneRequest).listen(4000);
+console.log("server is now running........");
+ 
 
 
 
