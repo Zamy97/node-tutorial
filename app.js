@@ -1,32 +1,34 @@
-var pocPeople = {
+function placeAnOrder(orderNUmber){
+    console.log("customer order", orderNUmber);
 
-    firstName: "Andrea"
-    lastName: "Pelayo"
-    age: 20
-};
-
-console.log(pocPeople);
-
-// What this next line will do is it'll add those two numbers together! Also remember how the function takes in parameters that will be added and return the value.
-
-function addNumbers(a,b){
-
-    return a+b;
-}
-
-console.log(addNumbers(7,5));
-
-// Any function without return will come out as undefined!
-
-function andreaPelayo(){
+    cookAndDeliverFood(function(){
+        console.log("delivered food order:", orderNUmber);
+    })
 
 }
-console.log(andreaPelayo);
 
+//simulate a 3second operation
 
+function cookAndDeliverFood(callback){
+    setTimeOut(callback, 3000);
+}
 
+// simulate users web request
+placeAnOrder(1);
+placeAnOrder(2);
+placeAnOrder(3);
+placeAnOrder(4);
+placeAnOrder(5);
+placeAnOrder(6);
 
+var bucky = {
+    favFood:
+}
 
+// == in javascript compares the values. For ex:
+console.log(19 == '19'); //it should print out true
+
+// === in javascript compares but at the same time it looks at the type of the value! if the value type is not the same then it's going to return false
 
 
 
